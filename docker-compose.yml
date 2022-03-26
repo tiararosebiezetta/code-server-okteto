@@ -16,6 +16,7 @@ services:
       - DEFAULT_WORKSPACE=/config/workspace #optional
     volumes:
       - /config:/config
+      - /config/workspace:/config/workspace
     ports:
       - 8443:8443
     restart: unless-stopped
